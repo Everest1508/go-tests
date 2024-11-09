@@ -1,0 +1,55 @@
+{
+  "testName": "Login",
+  "browser": {
+    "headless": false,
+    "slowMo": 1000
+  },
+  "tests": [
+    {
+      "action": "click",
+      "selectorType": "role",
+      "selector": "button[name='']",
+      "role": {
+        "type": "button",
+        "options": {
+          "name": "",
+          "exact": true
+        }
+      }
+    },
+    {
+      "action": "click",
+      "selectorType": "role",
+      "selector": "button[name='toggle-navigation']",
+      "role": {
+        "type": "button",
+        "options": {
+          "name": "toggle-navigation",
+          "exact": true
+        }
+      }
+    },
+    {
+      "action": "fill",
+      "selectorType": "default",
+      "selector": "input[name='username']"
+    },
+    {
+      "action": "fill",
+      "selectorType": "default",
+      "selector": "input[name='password']"
+    },
+    {
+      "action": "click",
+      "selectorType": "role",
+      "selector": "button[name='']",
+      "role": {
+        "type": "button",
+        "options": {
+          "name": "",
+          "exact": true
+        }
+      }
+    }
+  ]
+}

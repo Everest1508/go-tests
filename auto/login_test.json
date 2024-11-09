@@ -1,0 +1,39 @@
+{
+    "testName": "Login",
+    "browser": {
+        "headless": false,
+        "slowMo": 1000
+    },
+    "tests": [
+        {
+            "action": "goto",
+            "selectorType":"goto",
+            "value": "https://practicetestautomation.com/practice-test-login/"
+        },
+        {
+            "name": "Username",
+            "action": "fill",
+            "selectorType": "default",
+            "selector":"input[name='username']",
+            "value": "student"
+        },
+        {
+            "name":"Password",
+            "action": "fill",
+            "selectorType": "default",
+            "selector":"input[name='password']",
+            "value": "Password123"
+        },
+        {
+            "action": "click",
+            "selectorType": "role",
+            "selector": "button:has-text('Submit')",
+            "role": {
+                "type": "button",
+                "options": {
+                    "exact": true
+                }
+            }
+        }
+    ]
+}

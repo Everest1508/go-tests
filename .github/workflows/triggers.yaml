@@ -1,0 +1,14 @@
+name: trigger workflow
+
+on:
+    repository_dispatch:
+        types: [repo-trigger]
+
+jobs:
+    run-on-dispatch: 
+        runs-on: ubuntu-latest
+        steps:
+            - name: check out the code
+              uses: actions/checkout@v2
+            - name: tp
+              run: echo "runnn...."

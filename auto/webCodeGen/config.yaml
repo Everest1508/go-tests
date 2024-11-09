@@ -1,0 +1,5 @@
+testName: "Login"
+browser:
+  headless: false
+  slowMo: 1000
+url: "https://bulkcalendar.rubaru.shop/auth/login"
