@@ -38,5 +38,5 @@ func TestSum(t *testing.T) {
 	a := 2
 	b := 10
 	c := a + b
-	assert.Equal(t, c, 10, `not equal bro`)
+	assert.Equal(t, c, 12, `not equal bro`)
 }
